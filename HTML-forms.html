@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <h1>HTML Forms</h1>
+        
+        <!-- the action attribute tells the browser what to do when the form is submitted, and it is more
+             related to server-side data
+             when the form is submitted the browser takes the value of the action attribute inside the form and it will
+             send all the data that the user types in to the back-end
+        -->
+        <form action="">
+            <!-- the id attribute is like an identifier for the input tag
+                 it must be unique and no other element on this page can have the same id
+                 it can be used in CSS and JavaScript as a hook
+                 it can be used together with the label tag in the for attribute of the label tag
+            -->
+            <!-- the name attribute also serves as an identifier but also serves for back-end purposes
+                 the name attribute is also used to group different part of forms together for example radio buttons
+                 when the radio buttons have the same name attribute only one button can be selected
+            -->
+            <!-- the required attribute forces the user to fill the input field before submitting -->
+            <label for="username">enter username:</label>
+            <input id="username" name="username" placeholder="username" required type="text"/>
+            <br>
+            <!-- the email type has basic validations performed by the browser automatically -->
+            <label for="email">enter email:</label>
+            <input id="email" name="email" placeholder="email" type="email"/>
+            <br>
+            <label for="password">enter password:</label>
+            <input id="password" name="password" placeholder="password" type="password"/>
+            
+            <p>Select your age:</p>
+            <!-- input some input tags where the user does not enter a value we need to provide that value using the
+                 value attribute so that the back-end can read that value when the form is submitted
+            -->
+            <input id="option-1" name="age" type="radio" value="0-25"></int>
+            <label for="option-1">0-25</label>
+            <input id="option-2" name="age" type="radio" value="26-50"></int>
+            <label for="option-2">26-50</label>
+            <input id="option-3" name="age" type="radio" value="51+"></int>
+            <label for="option-3">51+</label>
+            <br><br>
+            
+            <label for="question">Security Question:</label>
+            <!-- the select tag acts a dropdown list -->
+            <!-- each option to be selected is inside its own option tag-->
+            <select id="question" name="question">
+                <option value="q1">What color are your favourite pair of socks?</option>
+                <option value="q2">If you could be a vegetable, what would it be?</option>
+                <option value="q3">What is your best ever security question?</option>
+            </select>
+            <br><br>
+            
+            <label for="answer">Security question answer:</label>
+            <input id="answer" name="answer" type="text">
+            <br><br>
+            
+            <!-- the textarea tag is not an input-->
+            <label for="bio">Your bio:</label><br>
+            <textarea cols="30" id="bio" name="bio" placeholder="About you..." rows="10"></textarea>
+            <br><br>
+            
+            <!-- the value attribute of the input type submit is used for the text inside the submit button -->
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
