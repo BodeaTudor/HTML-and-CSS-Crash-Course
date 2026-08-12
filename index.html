@@ -1,17 +1,82 @@
+<!-- I am comment, and I am not seen in the browser -->
 <!-- Always name the homepage of the website index.html -->
 <!-- DOCTYPE defines the document as an HTML5 document -->
 <!DOCTYPE html>
 <html>
-<head>
-	<!-- Code inside the head tag is extra information about the website (metadata, title etc.) -->
-	<!-- It doesn't get rendered -->
-	<title>Hello First Website!</title>
-</head>
-<body>
-<!-- Code inside the body tag gets rendered to the browser -->
-
-<p>Hello World!</p>
-<p>My first Web Page!</p>
-
-</body>
+    <head>
+        <!-- Code inside the head tag is extra information about the website (metadata, title etc.) -->
+        <!-- It doesn't get rendered -->
+        <title>Hello First Website!</title>
+    </head>
+    <body>
+        <!-- div = division -->
+        <!-- used to divide content into sections or group together elements that belong together -->
+        <div>
+            <!-- Code inside the body tag gets rendered to the browser -->
+            <!-- strong tag makes text bold -->
+            <p>Hello <strong>World!</strong></p>
+            <!-- em tag makes text italic -->
+            <!-- small tag makes text smaller -->
+            <p>My <small>first</small> <em>Web Page!</em></p>
+            
+            <!-- a = anchor tag -->
+            <!-- href = hyperlink reference, and it defines a website or another page, that redirects
+            the user when it clicks the text inside -->
+            <a href="https://www.youtube.com/@NetNinja"> The net ninja website </a>
+            <a href="/about.html"> About Us </a>
+        </div>
+        
+        <div>
+            <!-- There are 6 heading tags -->
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </div>
+        
+        <div>
+            <!-- ul = unordered list -->
+            <!-- Is a wrapper for li tags -->
+            <ul>
+                <li>List Item 1</li> <!-- li = list item -->
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ul>
+            
+            <!-- ol = ordered list -->
+            <ol>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ol>
+        </div>
+        
+        <!-- span tag similar to paragraphs, but they don't behave in the same way -->
+        <!-- are a way to add CSS or JavaScript hooks into a part of HTML -->
+        <!-- br = line break (doesn't need a closing tag) -->
+        <span>I am <br>span tag</span>
+        
+        <!-- hr = horizontal rule -->
+        <!-- separates content -->
+        <hr>
+        
+        <!-- img tag is used for displaying images -->
+        <!-- the src after the img tag is an attribute and is used to specify the image path -->
+        <!-- relatives path URLs are ok for the file protocols -->
+        <!-- for local servers is better to use '/' at the start to represent the root folder -->
+        <!-- the alt after the img tag is an attribute and is used for accessibility (e.g. screen reader) and it has no
+        visual impact -->
+        <img alt="batguy" src="/img/bat.gif">
+        
+        <!-- blockquote is used to quote something from another source -->
+        <!-- cite is an attribute that represents the original source of the quote -->
+        <blockquote cite="https://www.google.com/">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, eveniet.
+        </blockquote>
+        
+        <!-- style is an attribute used to style html elements directly inside the html -->
+        <p style="color: orange;">style me :)</p>
+    </body>
 </html>
