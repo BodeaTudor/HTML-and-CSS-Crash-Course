@@ -1,0 +1,65 @@
+style sheet - a list of CSS rules or rule sets
+
+the following are rule sets:
+div {
+    color: red;
+    margin: 20px;
+}
+
+p {
+    font-weight: bold;
+}
+
+The div tag is a selector in CSS.
+There are multiple types of selectors.
+Selectors are used to target the elements needed to be stylized.
+
+The color, margin, font-weight etc. attributes are called declarations.
+The declaration is a list of key-value pairs.
+
+CSS can be used directly inside the HTML file or by using external CSS files.
+To use external CSS files inside an HTML file it needs to be linked inside the head of the HTML file
+using the link tag.
+
+HEX CODES:
+Example: #42f4f1
+
+Hex codes start with a # and is followed by 6 digits that can be numbers from 0 to 9 or letters from A to F, and together
+they result a color.
+
+The hex code is made up of 3 different channels:
+R (Red) - the first two numbers
+G (Green) - the middle two numbers
+B (Blue) - the last two numbers
+
+For each channel 0 represents the darkest shade and F represents the brightest shade.
+
+INLINE ELEMENTS AND BLOCK ELEMENTS:
+The difference between inline and block elements is how they are displayed in a browser and how much room they
+upon the page.
+
+Inline elements line up next to each other in the browser, and they don't take up any more room than their content needs.
+ex: span, img, strong, em, a, etc.
+
+Block elements take the whole width of a page regardless of content and do not sit side-by-side. They always start on
+a new line.
+ex: p, div, h2, h2, h3, ul, li etc.
+
+The user agent stylesheet refers to styles applied automatically by the browser
+i.e. default browser styles and can be overridden.
+
+MARGIN & PADDING:
+The margin property represents the space around the outside of the element border.
+The padding property represents the internal space within an element.
+
+!!! For inline elements, margins are added only to the left and right. The padding works the same. !!!
+!!! With inline elements, the padding can go on top of another element padding !!!
+!!! For block elements, the margins of for example two elements, the bottom margin of the first and the top margin of
+    the second gets squashed together. Example: 20px margin-bottom (first) 20px margin-top (second) does not result in
+    40px, it will be 20 px between the elements.
+    If one of the elements had 60px and one 20px, the largest will apply i.e. 60px. !!!
+
+!!!!!!! IMPORTANT !!!!!!!
+The inline-block can be used to get the best of both worlds, resulting in the above rules not applying anymore.
+I.e. for an inline-block element that is by default inline, will have margins all around and the padding won't overlap,
+and for an inline-block element that is by default block, the margins won't overlap.
