@@ -1,0 +1,17 @@
+div {
+    color: lightcoral;
+    border: 1px solid gray; /* the children do not inherit this */
+    margin: 40px; /* the children do not inherit this */
+    font-weight: bold;
+}
+
+/* specificity */
+div p {
+    border: inherit;
+    margin: inherit;
+    color: red; /* overridden color */
+}
+
+p {
+    color: orange;
+}
