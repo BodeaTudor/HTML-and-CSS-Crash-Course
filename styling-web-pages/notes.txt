@@ -63,3 +63,45 @@ The padding property represents the internal space within an element.
 The inline-block can be used to get the best of both worlds, resulting in the above rules not applying anymore.
 I.e. for an inline-block element that is by default inline, will have margins all around and the padding won't overlap,
 and for an inline-block element that is by default block, the margins won't overlap.
+
+CLASSES & SELECTORS:
+We use the class attribute, as a hook to style individual HTML elements.
+In CSS a class is accessed via a dot symbol '.' followed by the name of the class (example: .error {...}).
+If multiple HTML elements have the same class for example a div and a paragraph you can target style the 'p' tags
+using the followin syntax: <name of the tag>.<name of the class> i.e p.error.
+Multiple classes can be added to an element by separating the name of the classes with a space, but the classes must
+be inside the double quotes. Example: class="classname anotherclassname". In the case of multiple classes, if one or more
+class names already had styles applied to it, it will be inherited unless it is overriden.
+
+Ids can also be used in a similar way as classes, but they are more useful when combined with JavaScript. To access an
+id in CSS the pound/hash symbols is used '#'. The inheritence works the same HOWEVER using ids have the constrait that
+it must be unique, i.e. the element with the id of for example 'content' cannot be used again on the same page.
+
+Descendant selectors can also be used to target only specific elements nested inside other elements. For example:
+A <p> nested inside a <div>. In that case another syntax it is used: <name of the parent><empty space><name of the child>
+I.e. div p {...}.
+Descendant selectors works with classes and ids as well.
+
+Attribute selectors can also be used to target specific elements but only the ones that have specific attributes.
+The syntax: <element tag>[attributes go inside the square brackets].
+I.e. a[href]{...}
+Attribute selectors can check for a specific value. For example, it can check that a href anchor attribute has a
+specific website value, and only apply stiles to that one specific anchor tag.
+Example: a[href="google.com"]{...}
+To apply a style for an attribute that has an unknown value, and we only know a part of the value, we can use an asterisk.
+Example: a[href*="goog"]{...}
+To apply a style for an attribute that has an unknown value, and we only know the end value, we can use a dollar sign.
+Example: a[href$="goog"]{...}
+
+!!! THE CASCADE !!!
+The cascade refers to rules cascading from top to bottom. From parents to children.
+Inheritance - HTML elements can inherit CSS properties that are applied to their parents, but not all properties can
+              be inherited, it is mainly fonts and text styles or colors.
+            - for the children to inherit the properties that are not automatically inherited from the parents, we use
+              the inherit property.
+            - properties of the parents can be overridden by the children
+Specificity - the inheritance works from top to bottom, so whatever is declared last inside CSS takes precedence however,
+              in case of specificity that is not the case.
+              For example a div that has paragraph children, in the CSS file the last rule is for paragraph tags.
+              If there is a rule targeting specific children like 'div p' and has the same declarations as the last rule,
+              that style will be applied ot the paragraph tags inside the div beause it is more SPECIFIC it carries more WEIGHT.

@@ -1,0 +1,50 @@
+/* using classes */
+p.error {
+    color: red;
+}
+
+p.success {
+    color: #02e002;
+}
+
+p.success.feedback {
+    border: 1px dashed #e002c2;
+    color: blue; /* overridden color */
+}
+
+/* using ids */
+#content {
+    background-color: #ebebeb;
+    padding: 20px;
+}
+
+/* descendant selector */
+div p {
+    border: lightgray dotted 1px;
+}
+
+div .error {
+    text-shadow: 2px 2px #02e002;
+}
+
+/* attribute selector */
+a[href] {
+    background-color: #02e002;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a[href="https://www.google.com"] {
+    background-color: orange;
+}
+
+a[href*="hub"] {
+    background-color: lightblue;
+    border: 2px solid black;
+}
+
+a[href$="dev"] {
+    text-decoration: line-through;
+}
