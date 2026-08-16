@@ -1,0 +1,180 @@
+/* static position (nothing changes on the page) */
+/*
+header {
+    position: static;
+}
+*/
+
+/* relative position */
+/*header {
+    /*position: relative;*/
+/*left: 100px; !* shift away from the left by 100px *!*/
+/*top: 100px; !* shift away from the top by 100px *!*/
+/*}*/
+
+/* CSS reset */
+body, ul, li, h1, h2, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    max-width: 100%;
+    width: 100%;
+}
+
+/* absolute position */
+.banner .welcome {
+    background-color: #FEB614;
+    color: white;
+    position: absolute;
+    padding: 30px;
+    left: 0;
+    top: 30%;
+}
+
+.banner h2 {
+    font-size: 74px;
+}
+
+.banner h2 span {
+    font-size: 1.3em; /* em is taking the value inherited from the parent and times it by the amount specified */
+}
+
+/* fixed position */
+header {
+    background-color: #F63232;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+header h1 {
+    display: inline-block;
+    color: white;
+    border: 8px solid white;
+    border-radius: 36px;
+    padding: 6px 12px;
+}
+
+/* sticky position */
+nav {
+    background-color: #F4F4F4;
+    padding: 20px;
+    position: sticky;
+    top: 103px;
+}
+
+nav ul {
+    white-space: nowrap;
+    /* align the nav element to the center */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav li {
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #4B4B4B;
+}
+
+nav li a.join {
+    color: #F63232;
+}
+
+main {
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+
+    /* box-sizing used to incorporate the padding into the total width so that elements won't go off the page
+       when the viewport is small, because the padding gets added to the max-width */
+    box-sizing: border-box;
+}
+
+article h2 {
+    color: #F63232;
+    font-size: 48px;
+}
+
+article h2 {
+    color: #F63232;
+    font-size: 48px;
+}
+
+article p {
+    line-height: 2em; /* em in this case takes the font-size of the p tag and times it by 2 */
+    color: #4B4B4B;
+}
+
+.images {
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+
+.images li {
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+
+.images li img {
+    max-width: 100%;
+}
+
+section.join {
+    background: #F4F4F4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4B4B4C;
+}
+
+section.join h2 {
+    font-size: 36px;
+}
+
+form input[name="email"] {
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid white;
+}
+
+form input[type="submit"] {
+    border: 8px solid #F63232;
+    border-radius: 36px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #F63232;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: white;
+}
+
+footer {
+    background-color: #F63232;
+    color: white;
+    padding: 10px;
+    margin: 20px 0;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
