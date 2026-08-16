@@ -1,0 +1,89 @@
+/* static position (nothing changes on the page) */
+/*
+header {
+    position: static;
+}
+*/
+
+/* relative position */
+/*header {
+    /*position: relative;*/
+/*left: 100px; !* shift away from the left by 100px *!*/
+/*top: 100px; !* shift away from the top by 100px *!*/
+/*}*/
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+/* absolute position */
+.banner .welcome {
+    background-color: #FEB614;
+    color: white;
+    position: absolute;
+    padding: 30px;
+    left: 0;
+    top: 30%;
+}
+
+.banner h2 {
+    font-size: 74px;
+}
+
+.banner h2 span {
+    font-size: 1.3em; /* em is taking the value inherited from the parent and times it by the amount specified */
+}
+
+/* fixed position */
+header {
+    background-color: #F63232;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+header h1 {
+    display: inline-block;
+    color: white;
+    border: 8px solid white;
+    border-radius: 36px;
+    padding: 6px 12px;
+}
+
+/* sticky position */
+nav {
+    background-color: #F4F4F4;
+    padding: 20px;
+    position: sticky;
+    top: 103px;
+}
+
+nav ul {
+    white-space: nowrap;
+    /* align the nav element to the center */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav li {
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #4B4B4B;
+}
+
+nav li a.join {
+    color: #F63232;
+}

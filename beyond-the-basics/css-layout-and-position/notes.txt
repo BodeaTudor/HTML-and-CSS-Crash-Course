@@ -1,0 +1,17 @@
+The position property:
+- it can have 1 of 5 values:
+    * static   - default for HTML elements
+    * relative - when an elements positon property is set tot relative its position can be shifted around the page
+                 relative to its original position
+               - a lot of the time position relative it's not used to move something around, it's used so that the elements
+                 inside the element with position relative can be used with position absolute
+                 I.e -> parent   -> relative
+                        children -> absolute
+    * fixed    - positions a certain element relative to the viewport, and it will always be fixed on the viewport, for
+                 example when there is a nav bar with fixed position, when scrolling, the nav bar won't leave the viewport
+    * absolute - allows for positioning element absolutely relative to its closest parent which has also been given a
+                 position property that is not static
+               - for example a parent that has a position of relative, then the child element can be positioned inside it
+                 with a position of absolute
+    * sticky   - a mixture of static and fixed (it's static to begin with then it becomes fixed when the scroll position
+                 on a page reaches a certain point)
