@@ -1,0 +1,8 @@
+Media queries tell the browser how to style an element at particular viewports dimensions.
+The viewport meta tag tells the browser what width the viewport should be.
+Responsive images only load smaller images for mobile devices.
+
+When designing a responsive website it is good to have a clear process and strategy put into place.
+One approach is a 'mobile-first approach'. A mobile-first approach refers to planning the design for a small mobile
+device first and then adapt for larger screens. This is due to mobile devices having much smaller screens, forcing
+the developers to think about which content is really needed, the most important parts.
