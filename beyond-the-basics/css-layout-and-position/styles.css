@@ -178,3 +178,56 @@ footer {
     left: 0;
     width: 100%;
 }
+
+/* pseudo classes */
+nav li a:hover {
+    text-decoration: underline;
+    background-color: pink;
+    padding: 3px;
+}
+
+.images li:hover {
+    position: relative;
+    top: -4px;
+}
+
+form input[name="email"]:focus {
+    border: 4px dashed #4B4B4B;
+    outline: none;
+}
+
+form input[name="email"]:valid {
+    border: 4px solid #71d300;
+    outline: none;
+}
+
+form input[type="submit"]:hover {
+    position: relative;
+    box-shadow: 2px 2px 2px #F63232;
+    top: -4px;
+    left: -4px;
+}
+
+nav li:first-child {
+    position: relative;
+    text-decoration: underline wavy #F63232;
+}
+
+/* pseudo elements */
+article p::first-line {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+section.join p::first-letter {
+    font-size: 2em;
+}
+
+p::selection {
+    background-color: #F63232;
+    color: wheat;
+}
+
+p::after {
+    content: '...this has been injected!';
+}
