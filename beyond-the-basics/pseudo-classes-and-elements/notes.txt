@@ -1,0 +1,6 @@
+Pseudo classes and elements are special keywords that can be used in CSS to target elements when they're in particulate
+state. For example: on hover, focus, first child of a parent.
+To use pseudo classes a colon is used at the end of the selector, for example: :hover, :focus.
+
+Pseudo-elements use the same idea as the pseudo classes, but have two colons to access them, i.e. '::'.
+The main difference is that they are used to inject dynamic content.
